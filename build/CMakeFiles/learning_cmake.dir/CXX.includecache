@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/ClassFromAnotherFile.hpp
+iostream
+-
+
+/home/igricart/git/Learning/src/ClassFromAnotherFile.cpp
+ClassFromAnotherFile.hpp
+/home/igricart/git/Learning/src/ClassFromAnotherFile.hpp
+
+/home/igricart/git/Learning/src/main.cpp
+iostream
+-
+ClassFromAnotherFile.hpp
+/home/igricart/git/Learning/src/ClassFromAnotherFile.hpp
+

@@ -1,0 +1,3 @@
+/home/igricart/git/Learning/build/CMakeFiles/edit_cache.dir
+/home/igricart/git/Learning/build/CMakeFiles/rebuild_cache.dir
+/home/igricart/git/Learning/build/CMakeFiles/learning_cmake.dir
