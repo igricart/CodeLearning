@@ -20,10 +20,22 @@ include_directories(include)
 # Create macro SOURCES containing necessary .cpp files
 # - Approach 1
 # Add manually all cpp files
-#set(SOURCES src/main.cpp src/ClassFromAnotherFile.cpp)
-
+#set(SOURCES src/main.cpp src/ClassFromAnotherFile.cpp ...)
 # - Approach 2
-file(GLOB SOURCES "src/*.cpp")
+#file(GLOB SOURCES "src/*.cpp")
+
+set(SOURCES src/tests.cpp src/ClassFromAnotherFile.cpp)
 
 # Create executable file learning_cmake using the cpp files defined in SOURCES
-add_executable(learning_cmake ${SOURCES})
+#add_executable(learning_cmake ${SOURCES})
+
+# Steps to use GTest in code
+# 1. Locate GTest
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+
+# 2. Link runTests with what we want to test and the GTest and pthread library
+add_executable(runTests ${SOURCES})
+target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
+
+# Obs.: When necessary, use this to show results on XML file: --gtest_output="xml:<file name>"
