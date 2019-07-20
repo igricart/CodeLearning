@@ -1,10 +1,14 @@
 // ClassFromAnotherFile.h
 // Header defining the class used in main.cpp but from another file
 
-//Used to don't declare a header more than one time
+// Used to don't declare a header more than one time
 #pragma once
-#include <iostream>
 
+// Other includes
+#include <iostream>
+#include <math.h>
+
+// Class prototype
 class ClassFromAnotherFile
 {
 private:
@@ -15,4 +19,5 @@ public:
     ~ClassFromAnotherFile();
     void printPrivateDataMemberUsingPublicMemberFunction();
     int calculateCorrectSum(int A, int B);
+    double squareRoot(const double a);  
 };

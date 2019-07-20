@@ -21,3 +21,13 @@ int ClassFromAnotherFile::calculateCorrectSum(int A, int B)
 {
     return (A + B);
 }
+
+double ClassFromAnotherFile::squareRoot(const double a) 
+{
+    double b = sqrt(a);
+    if(b != b) { // nan check
+        return -1.0;
+    }else{
+        return sqrt(a);
+    }
+}
