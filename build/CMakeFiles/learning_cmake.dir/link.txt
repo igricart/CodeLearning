@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/learning_cmake.dir/src/ClassFromAnotherFile.cpp.o CMakeFiles/learning_cmake.dir/src/main.cpp.o  -o learning_cmake 
