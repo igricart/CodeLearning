@@ -7,6 +7,7 @@
 # References
 # http://derekmolloy.ie/hello-world-introductions-to-cmake/
 # https://cmake.org/cmake-tutorial/
+# https://github.com/google/googletest/blob/master/googletest/docs/primer.md
 
 # Define the minimum version required
 cmake_minimum_required (VERSION 3.5.1)
